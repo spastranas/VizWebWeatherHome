@@ -1,23 +1,54 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-us">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CFira+Sans:300,400,400i,600">
+  <meta charset="UTF-8">
+  <title>WeatherAnalysis</title>
 
-    <!-- Material icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- CSS (including Bootstrap) -->
-    <link rel="stylesheet" href="css/theme.min.css">
-    <link rel="stylesheet" href="BlueSyle.css"> 
+  <link rel="stylesheet" href="BlueSyle.css">
 
-    <title>Bootstrap Theme</title>
+
+
+
+
+  <!-- embedded css style -->
+  <style type="text/css">
+    .navbar-toggler a:hover, .dropdown-menu:hover .dropbtn {
+       background-color:transparent;
+     }
+     /* Dropdown content (hidden by default)*/
+      .dropdown-menu {
+       display: none;
+       position: absolute;
+       background-color: #f9f9f9;
+       min-width: 160px;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       z-index: 1;
+     } 
+     .dropdown-menu:hover .dropdown-menu-content {
+       display: block;
+     }
+     </style>
+   
+     <!-- end of embaded css style -->
+
+
+
+
+
+
+
+
 </head>
+
+
 <body>
-  <iframe class="iframe-preview" width="100%" src="https://themes.11bits.es/focus/"></iframe>
     <style>
         /* body  { background:#7b8a8b} */
          body { background:#ecf0f1;} 
@@ -30,8 +61,8 @@
     <div class="row">
             <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                            <!-- <a class="navbar-brand" href="#">Weather Analysis</a> -->
-                            <a class="navbar-brand" href="#"><h1>Weather Analysis</h1></a> -->
+                            
+                            <a class="navbar-brand" href="index.html"><h1><strong>Weather Analysis</strong></h1></a>
 
 
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,25 +73,39 @@
                               
                               <ul class="navbar-nav mr-auto">
                               </ul>
+
+
+                                            
+                  
                               
                               <div class="form-group">
-                                <select class="custom-select">
-                                  <option selected="">Plots</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
+     
                                 <ul class="navbar-nav mr-auto">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link dropdown-toggle" 
+                                        href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                                        > Plots
+                                              </a>
+                                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="Temperature.html">Temperature</a>
+                                                    <a class="dropdown-item" href="Wind.html">Wind</a>
+                                                    <a class="dropdown-item" href="Cloudiness.html">Coudiness</a>
+                                                    <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                                               </div>
+                                                                               
+                    
+                                                  
                                 
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Comparison</a>
+                                  <a class="nav-link" href="comparison.html">Comparison</a>
                                 </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="#">Data</a>
                                 </li>
-                              </li>
+                              
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                               </li>
                               </ul>
                               </div>
@@ -119,24 +164,8 @@
                                                         <tr class="table-light">
                                                                 <br> 
                                                             <td>
-                                                            
-                                                              <div style="max-width: 300px">
-                                                                <img src="LatitudeVsTemperaturePlot.png" data-action="zoom" class="img-fluid" alt="LatitudeVsTemperaturePlot">
-                                                            </div>
-
-
-
-
-                                                                <!-- <figure class="img-scale d-inline-block">
-                                                                    <div class="img-wrap">
-                                                                        <img src="LatitudeVsTemperaturePlot.png" alt="LatitudeVsTemperaturePlot" class="img-fluid">
-                                                                    </div>
-                                                                </figure> -->
-
-
-
-
-                                                            <!-- <img style="height: 200px; width: 100%; display: block;" src="LatitudeVsTemperaturePlot.png" alt="LatitudeVsTemperaturePlot"> -->
+                                                               
+                                                            <img style="height: 290px; width: 100%; display: block;" src="LatitudeVsTemperaturePlotBig.png" alt="LatitudeVsTemperaturePlot">
                                                             </td>
                                                             
                                                         </tr>
@@ -168,16 +197,14 @@
                                                                 <BR>
                                                                     
                                                                     <!-- <small class="text-muted"></small> -->
-
-                                                                    <button type="button" class="btn btn-primary">Humidity</button>
-                                                                    <button type="button" class="btn btn-secondary">Wind</button>
-                                                                    <button type="button" class="btn btn-success">Cloudiness</button>
+                                                                    
+                                                                      <a  href="Humidity.html"><button type="button" class="btn btn-primary">Humidity</button></a>
+                                                                      <a  href="Wind.html"><button type="button" class="btn btn-secondary">Wind</button></a>
+                                                                        <a  href="Cloudiness.html"><button type="button" class="btn btn-success">Cloudiness</button></a>
+                                                                        <a  href="Temperature.html"><button type="button" class="btn btn-danger">Temperature</button></a>
                                                             <br>
                                                             <br>
-                                                                    <!-- <style>
-                                                                    table { background:#7b8a8b}
-                                                                    table    { border-color:#7b8a8b}
-                                                                    </style>  -->
+                                                                
                                                             </td>
                                                     </thead>
                                             </table>
@@ -202,10 +229,7 @@
 
 <!-- closing -->
     </div>
-
-
-
-
-    <!-- JS (including Bootstrap & plugins) -->
-    <script src="js/theme.min.js"></script>
+        
 </body>
+        
+</html>                

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-  <link rel="stylesheet" href="CSS/BlueStyle.css">
+  <link rel="stylesheet" href="BlueSyle.css">
 
 
 </head>
@@ -20,7 +20,7 @@
 <body>
     <style>
         /* body  { background:#7b8a8b} */
-         body {background: rgb(77, 100, 122);} 
+         body { background:#ecf0f1;} 
     </style>
 
 
@@ -34,51 +34,46 @@
               <!-- Use the navegation bar of a bootstrap tempate -->
                     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
               <!-- left most of the navegation bar -->
-                            <a class="navbar-brand" href="index.html"><h1><strong>Weather Analysis</strong></h1></a> -->
+                            <a class="navbar-brand" href="index.html"><h1>Weather Analysis</h1></a> -->
 
     
-                              <!-- This makes the folowing items underneath to be grouped to the right  -->
+                              <!-- This makes the folowing items underneath to be grouped to the left  -->
                               <ul class="navbar-nav mr-auto">
-                                </ul>
-                                  <div class="form-group">
-  
-                                <!-- Ul is an unordered list. Css formats this makes the items underneath to be side by side rather than in a list -->
-                                   <ul class="navbar-nav mr-auto"> 
-                                
-                                <!-- Navigation item #1  -->
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="HTML/comparison.html">Comparison</a>
-                                  </li>
-                                <!--Navigation item #2  -->
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="HTML/Data.html">Data</a>
-                                  </li>
-                                <!-- Navigation item #3 -->
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="index.html">Home</a>
-                                </li>
-                                 <!-- Navigation item #4 -->
-                                 <li class="dropdown">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Plots</a>
-                                    <div class="dropdown-content" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                      <a class="dropdown-item" href="HTML/Temperature.html">Temperature</a>
-                                      <a class="dropdown-item" href="HTML/Wind.html">Wind</a>
-                                      <a class="dropdown-item" href="HTML/Humidity.html">Humidity</a>
-                                      <a class="dropdown-item" href="HTML/Cloudiness.html">Cloudiness</a>
-                                    </div>
-                                  </li>
-                                  <!-- Close unordered list-->
-                                </ul>
-                              </div>
-                          </nav>
-                   
-            <!-- close bootstrap row and the column -->
-            </div>
-               
-             
-      </div>
+                              </ul>
+                                <div class="form-group">
 
+                              <!-- Ul is an unordered list. Css formats this makes the items underneath to be side by side rather than in a list -->
+                                 <ul class="navbar-nav mr-auto"> 
+                              
+                              <!-- Navegation itemn #1  -->
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Comparison</a>
+                                </li>
+                              <!--Navegation item #2  -->
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Data</a>
+                                </li>
+                              <!-- Navegation itmen #3 -->
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                              </li>
+                              <!-- Close unordered list-->
+                              </ul>
+                              <!-- close grouping of lists -->
+                              </div>
+              <!-- close the column -->
+              </div>
+              <!-- close the navigation bar -->
+              </nav>
+                          
+               
+        </div>
+
+<!-- this define the width of the items after the nav bar  -->
+        <div class="collapse navbar-collapse" id="navbarColor01"> 
+                       
+          </div>
           <!-- Open a new row to contain 1 column -->
 
         <div class="row">
@@ -123,7 +118,7 @@
                                             <br>
                                             <p class="mb-1"><i class="material-icons">check</i>&nbsp;&nbsp;The scatterplot proves the point.</p>
                                             <br>
-                                            <p class="mb-1"><i class="material-icons">developer_board</i>&nbsp;&nbsp;To build this analysis, I queried the OpenWeather API and used Pandas and Matplotlib to visualize it.</p>
+                                            <p class="mb-1"><i class="material-icons">developer_board</i>&nbsp;&nbsp;To build this analysis, I queried the OpenWeather API, and used Pandas and Matplotlib to visualize it.</p>
                         
                                         
 
@@ -142,7 +137,7 @@
                                                                 <br> 
                                                             <td>
                                                                
-                                                            <img style="height: 290px; width: 100%; display: block;" src="plots/LatitudeVsTemperaturePlotBig.png" alt="LatitudeVsTemperaturePlot">
+                                                            <img style="height: 290px; width: 100%; display: block;" src="LatitudeVsTemperaturePlotBig.png" alt="LatitudeVsTemperaturePlot">
                                                             </td>
                                                             
                                                         </tr>
@@ -153,34 +148,52 @@
                                     
                                   </tr>
                                   <!-- Second row light gray text-->
-                                  <!-- COlumn 1 -->
                                    <tr class="table-light"> 
                                     <th scope="row"></th>
                                     <td>
-                                            
-                                            <p class="mb-1">&nbsp;The relationship with temperature is one we all know about. But how about humidity, wind or cloudiness? Is there also a relationship with latitute? Let's take a look!</p>
+                                            <p class="card-text"><h6><i class="material-icons">wb_incandescent </i>Interesting fact: looks like cities in the southern hemesphire tend to be slighly warmer than those on the northen one.</h6></p>
+
+                                            <p class="mb-1">The relatioship with temperature is one we all know about. But how about humidity, wind or cloudiness? Is there also a relationship with latitute? Let's take a look!</p>
                                     </td>
-                                                                       
-                                <!-- COlumn 2 -->
-                                                  <td>
+                                    <!-- table inside column-- BUTTONS -->
+                                    <td>    
+                                                                            
+                                            <table  >
+                                                 
+                                            <!-- class="table table-hover"                                            > -->
+                                                    <thead>
+                                        
+                                                               
+                                                                
+                                                            <td>
+                                                                <BR>
+                                                                    
+                                                                    <!-- <small class="text-muted"></small> -->
 
-
-
-
-                                                                    <a  href="HTML/Humidity.html"><button type="button" class="btn btn-primary">Humidity</button></a>
-                                                                    <a  href="HTML/Wind.html"><button type="button" class="btn btn-secondary">Wind</button></a>
-                                                                      <a  href="HTML/Cloudiness.html"><button type="button" class="btn btn-success">Cloudiness</button></a>
-                                                                      <a  href="HTML/Temperature.html"><button type="button" class="btn btn-danger">Temperature</button></a>
-                                                            
+                                                                    <button type="button" class="btn btn-primary">Humidity</button>
+                                                                    <button type="button" class="btn btn-secondary">Wind</button>
+                                                                    <button type="button" class="btn btn-success">Cloudiness</button>
+                                                                    <button type="button" class="btn btn-danger">Temperature</button>
+                                                            <br>
+                                                            <br>
                                                     
-                                                  </td>
-                                     </tr>
+                                                            </td>
+                                                    </thead>
+                                            </table>
+                                                       
+                        
+                    </tr>
+                </tbody>
+        </table>
+</td>
+                                   
+                                   
+                                  </tr>
                                 </tbody>
-                            </table>                                                  
+                              </table> 
 
-
+ <!--close table  -->
                
-            </div>
             </div>
                   
 

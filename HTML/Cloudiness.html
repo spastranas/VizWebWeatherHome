@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+   
+
+  <meta charset="UTF-8">
+  <title>CLoudinessAnalysis</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="../CSS/BlueStyle.css">
+
+
+</head>
+
+
+<body>
+    <style>
+        /* body  { background:#7b8a8b} */
+         body {background: rgb(77, 100, 122);} 
+    </style>
+
+
+
+    <div class="container">
+        <!-- Bootstrap can only work with rows and columns -->
+        <!-- define row #1 -->
+    <div class="row">
+        <!-- Define column 1 since the lengh is form 1 to 12 and I only need one column, I will define my column as size 12 -->
+            <div class="col-md-12">
+              <!-- Use the navegation bar of a bootstrap tempate -->
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+              <!-- left most of the navegation bar -->
+                            <a class="navbar-brand" href="../index.html"><h1><strong>Weather Analysis</strong></h1></a> -->
+
+    
+                              <!-- This makes the folowing items underneath to be grouped to the right  -->
+                              <ul class="navbar-nav mr-auto">
+                                </ul>
+                                  <div class="form-group">
+  
+                                <!-- Ul is an unordered list. Css formats this makes the items underneath to be side by side rather than in a list -->
+                                   <ul class="navbar-nav mr-auto"> 
+                                
+                                <!-- Navigation item #1  -->
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="../HTML/comparison.html">Comparison</a>
+                                  </li>
+                                <!--Navigation item #2  -->
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Data</a>
+                                  </li>
+                                <!-- Navigation item #3 -->
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="../index.html">Home</a>
+                                </li>
+                                 <!-- Navigation item #4 -->
+                                 <li class="dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Plots</a>
+                                    <div class="dropdown-content" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                      <a class="dropdown-item" href="../HTML/Temperature.html">Temperature</a>
+                                      <a class="dropdown-item" href="../HTML/Wind.html">Wind</a>
+                                      <a class="dropdown-item" href="../HTML/Humidity.html">Humidity</a>
+                                      <a class="dropdown-item" href="../HTML/Cloudiness.html">Cloudiness</a>
+                                    </div>
+                                  </li>
+                                <!-- Close unordered list-->
+                                </ul>
+                              </div>
+                            </nav>
+                     
+              <!-- close bootstrap row and the column -->
+              </div>
+              </div>
+          <!-- Open a Bootstrap row 1 definition to contain 1 columns -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-3">
+                    <h3 class="card-header">What's the Cloudiness As We Approach the Equator?</h3>
+                    <div class="card-body">
+                      <h5 class="card-title">Does it change in relation with the latitude?</h5>
+                     </div>
+                    </div>
+              </div>
+            </div>
+ <!-- Open a Bootstrap row 2 definition to contain 1 columns. inside that column there will be a table with 2 columns -->
+        <div class="row">
+
+            
+
+            <div class="col-md-12">
+                <!-- table -->
+
+                        <table class="table">
+                                
+                                <tr class="table-primary">
+                                <th scope="row"></th>
+                                    <!-- column 1 --- PLOT add it inside a table-->
+                                    <td>
+
+                                            <table class="table ">
+                                                    <thead>
+                                        
+                                                        <tr class="table-light">
+                                                                <br> 
+                                                            <td>
+                                                               
+                                                            <img style="height: 280px; width: 100%; display: block;" src="../Plots/CloudinessVsTemperaturePlot.png" alt="LatitudeVsCLoudinessPlot">
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                    </tbody>
+                                                    </thead>
+                                            </table>
+                                            
+
+
+
+
+                                    </td>
+                                    <!-- Column 2: PROJECT EXPLANATION  -->
+                                    <td>    
+                                            <br>
+                                            <br>
+                                                                                        
+                                            <p class="mb-1"><h5><i class="material-icons">cloud_circle </i>&nbsp;&nbsp;It does NOT change in relation to the latitude.</h5>
+                                            
+                                                <p class="card-text"> <h6>Closness to to the Equator does not apear to have an influence on how cloudy cities are.</h6>
+                                                <br> 
+                            
+                                                <p class="mb-1"><h5><i class="material-icons">wb_incandescent </i>&nbsp;&nbsp;Interesting fact:</h5></p>
+                                                    
+                                                <p class="card-text"><h6>    It is interesting to see that a strong band of cities sits at 0, 40, 80, and 100% cloudiness.</h6></p>
+                                             
+                                        
+                                    </td>
+                    <!-- Close table INSIDE ROW  2 definition -->                                
+                                  </tr>
+                                  
+ 
+                               </table>  
+             <!--CLose the column and row that contains the table  -->
+            </div> 
+        </div>
+        
+        <!-- Add a bootstrap definition of row 3 with 1 column to contain buttons -->
+        <div class="row">
+            <div class="col-md-12">
+                              
+  
+                                    <a  href="../HTML/Humidity.html"><button type="button" class="btn btn-primary">Humidity</button></a>
+                                    <a  href="../HTML/Wind.html"><button type="button" class="btn btn-secondary">Wind</button></a>
+                                    <a  href="../HTML/Temperature.html"><button type="button" class="btn btn-danger">Temperature</button></a>
+ 
+
+
+
+
+  
+      </div>
+      </div>
+
+
+<!-- closing -->
+    </div>
+        
+</body>
+        
+</html>                

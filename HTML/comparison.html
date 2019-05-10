@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+   
+
+  <meta charset="UTF-8">
+  <title>ComparisonAnalysis</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="../CSS/BlueStyle.css">
+
+
+</head>
+
+
+<body>
+    <style>
+        /* body  { background:#7b8a8b} */
+         body {background: rgb(77, 100, 122);} 
+    </style>
+
+
+
+    <div class="container">
+        <!-- Bootstrap can only work with rows and columns -->
+        <!-- define row #1 -->
+    <div class="row">
+        <!-- Define column 1 since the lengh is form 1 to 12 and I only need one column, I will define my column as size 12 -->
+            <div class="col-md-12">
+              <!-- Use the navegation bar of a bootstrap tempate -->
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+              <!-- left most of the navegation bar -->
+                            <a class="navbar-brand" href="../index.html"><h1><strong>Weather Analysis</strong></h1></a> -->
+
+    
+                              <!-- This makes the folowing items underneath to be grouped to the right  -->
+                              <ul class="navbar-nav mr-auto">
+                                </ul>
+                                  <div class="form-group">
+  
+                                <!-- Ul is an unordered list. Css formats this makes the items underneath to be side by side rather than in a list -->
+                                   <ul class="navbar-nav mr-auto"> 
+                                
+                                <!-- Navigation item #1  -->
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="../HTML/comparison.html">Comparison</a>
+                                  </li>
+                                <!--Navigation item #2  -->
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="../HTML/Data.html">Data</a>
+                                  </li>
+                                <!-- Navigation item #3 -->
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="../index.html">Home</a>
+                                </li>
+                                 <!-- Navigation item #4 -->
+                                 <li class="dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Plots</a>
+                                    <div class="dropdown-content" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                      <a class="dropdown-item" href="../HTML/Temperature.html">Temperature</a>
+                                      <a class="dropdown-item" href="../HTML/Wind.html">Wind</a>
+                                      <a class="dropdown-item" href="../HTML/Humidity.html">Humidity</a>
+                                      <a class="dropdown-item" href="../HTML/Cloudiness.html">Cloudiness</a>
+                                    </div>
+                                  </li>
+                                <!-- Close unordered list-->
+                                </ul>
+                              </div>
+                            </nav>
+                     
+              <!-- close bootstrap row and the column -->
+              </div>
+              </div>
+
+          <!-- Open a new row to contain 1 column -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-3">
+                    <h3 class="card-header">Temperature, Cloudiness, Wind and Humidity.</h3>
+                    <div class="card-body">
+                      <h5 class="card-title">Do They Change as we Approach The Equator?</h5>
+                      <h6>Lets compare the plots side by side.</h2>
+                     </div>
+                    </div>
+              </div>
+        </div>
+
+        <div class="row">
+
+            
+
+            <div class="col-md-12">
+                
+<!-- table In my column-->
+                        <table class="table">
+                                <!-- row one of the table : will contain two columns  -->
+                                <tr class="table-primary">
+                                <th scope="row"></th>
+                                    <!-- column 1 --- -->
+                                    <td>
+                                         <table class="table ">
+                                            <thead> 
+                                
+                                                 <tr class="table-light"> 
+                                                    <br> 
+                                                    <td>
+                                                       
+                                                    <img style="height: 300px; width: 100%; display: block;" src="../Plots/LatitudeVsTemperaturePlot.png" alt="LatitudeVsTemperaturePlot">
+                                                    </td>
+                                                    
+                                                </tr>
+                                            <!-- </tbody> -->
+                                            </thead> 
+                                            </table>
+
+
+
+
+                                    </td>
+                                    <!-- Column 2 of table in row 1 -->
+                                    <td>    
+                                        
+                                            <table class="table">
+                                                    <thead>
+                                        
+                                                        <tr class="table-light">
+                                                                <br> 
+                                                            <td>
+                                                               
+                                                            <img style="height: 300px; width: 100%; display: block;" src="../Plots/CloudinessVsTemperaturePlot.png" alt="CoudinessVsTemperaturePlot">
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                    
+                                                    </thead>
+                                            </table>
+                                    </td>
+                            <!-- close row one of my table  -->
+                                  </tr>
+
+                                  <!-- Second row  will also have tow columns-->
+                                  <tr class="table-primary">
+                                    <th scope="row"></th>
+                                        <!-- column 1 ----->
+                                        <td>
+                                            <table class="table">
+                                                <thead>
+                                    
+                                                    <tr class="table-light">
+                                                            <br> 
+                                                        <td>
+                                                           
+                                                        <img style="height: 300px; width: 100%; display: block;" src="../Plots/HumidityVsTemperaturePlot.png" alt="LatitudeVsHumidityPlot">
+                                                        </td>
+                                                        
+                                                    </tr>
+                                                
+                                                </thead>
+                                        </table>
+    
+    
+    
+    
+                                        </td>
+                                        <!-- Column 2 -->
+                                        <td>    
+                                            
+                                                <table class="table">
+                                                        <thead>
+                                            
+                                                            <tr class="table-light">
+                                                                    <br> 
+                                                                <td>
+                                                                   
+                                                                <img style="height: 300px; width: 100%; display: block;" src="../Plots/WindVsTemperaturePlot.png" alt="LatitudeVsWIndPlot">
+                                                                </td>
+                                                                
+                                                            </tr>
+                                                        
+                                                        </thead>
+                                                </table>
+                                        </td>
+                         <!--  CLose row two of the table -->
+                                      </tr>
+                </tbody>
+        </table>
+
+                                   
+                                   
+                            
+
+ <!--close  bootstrap row and column  -->
+               
+            </div>
+                  
+   </div>
+        
+
+      
+        <!-- Add a bootstrap definition of row 3 with 1 column to contain buttons -->
+        <div class="row">
+            <div class="col-md-12">
+                              
+  
+                                    <a  href="../HTML/Humidity.html"><button type="button" class="btn btn-primary">Humidity</button></a>
+                                    <a  href="../HTML/Wind.html"><button type="button" class="btn btn-secondary">Wind</button></a>
+                                      <a  href="../HTML/Cloudiness.html"><button type="button" class="btn btn-success">Cloudiness</button></a>
+                                      <a  href="../HTML/Temperature.html"><button type="button" class="btn btn-danger">Temperature</button></a>
+ 
+
+
+
+
+  
+      </div>
+      </div>
+
+
+</body>
+        
+</html>                
