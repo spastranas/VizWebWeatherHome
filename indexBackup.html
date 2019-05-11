@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-  <link rel="stylesheet" href="BlueSyle.css">
+  <link rel="stylesheet" href="CSS/BlueStyle.css">
 
 
 </head>
@@ -20,7 +20,7 @@
 <body>
     <style>
         /* body  { background:#7b8a8b} */
-         body { background:#ecf0f1;} 
+         body {background: rgb(77, 100, 122);} 
     </style>
 
 
@@ -34,46 +34,51 @@
               <!-- Use the navegation bar of a bootstrap tempate -->
                     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
               <!-- left most of the navegation bar -->
-                            <a class="navbar-brand" href="index.html"><h1>Weather Analysis</h1></a> -->
+                            <a class="navbar-brand" href="index.html"><h1><strong>Weather Analysis</strong></h1></a> -->
 
     
-                              <!-- This makes the folowing items underneath to be grouped to the left  -->
+                              <!-- This makes the folowing items underneath to be grouped to the right  -->
                               <ul class="navbar-nav mr-auto">
-                              </ul>
-                                <div class="form-group">
-
-                              <!-- Ul is an unordered list. Css formats this makes the items underneath to be side by side rather than in a list -->
-                                 <ul class="navbar-nav mr-auto"> 
-                              
-                              <!-- Navegation itemn #1  -->
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">Comparison</a>
+                                </ul>
+                                  <div class="form-group">
+  
+                                <!-- Ul is an unordered list. Css formats this makes the items underneath to be side by side rather than in a list -->
+                                   <ul class="navbar-nav mr-auto"> 
+                                
+                                <!-- Navigation item #1  -->
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="HTML/comparison.html">Comparison</a>
+                                  </li>
+                                <!--Navigation item #2  -->
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="HTML/Data.html">Data</a>
+                                  </li>
+                                <!-- Navigation item #3 -->
                                 </li>
-                              <!--Navegation item #2  -->
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Data</a>
+                                  <a class="nav-link" href="index.html">Home</a>
                                 </li>
-                              <!-- Navegation itmen #3 -->
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                              </li>
-                              <!-- Close unordered list-->
-                              </ul>
-                              <!-- close grouping of lists -->
+                                 <!-- Navigation item #4 -->
+                                 <li class="dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Plots</a>
+                                    <div class="dropdown-content" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                      <a class="dropdown-item" href="HTML/Temperature.html">Temperature</a>
+                                      <a class="dropdown-item" href="HTML/Wind.html">Wind</a>
+                                      <a class="dropdown-item" href="HTML/Humidity.html">Humidity</a>
+                                      <a class="dropdown-item" href="HTML/Cloudiness.html">Cloudiness</a>
+                                    </div>
+                                  </li>
+                                  <!-- Close unordered list-->
+                                </ul>
                               </div>
-              <!-- close the column -->
-              </div>
-              <!-- close the navigation bar -->
-              </nav>
-                          
+                          </nav>
+                   
+            <!-- close bootstrap row and the column -->
+            </div>
                
-        </div>
+             
+      </div>
 
-<!-- this define the width of the items after the nav bar  -->
-        <div class="collapse navbar-collapse" id="navbarColor01"> 
-                       
-          </div>
           <!-- Open a new row to contain 1 column -->
 
         <div class="row">
@@ -112,13 +117,13 @@
                                             <h5 class="mb-1"></span>HOW DO WE PROVE IT?</h5>
                                             <br> 
                         
-                                            <p class="mb-1"><i class="material-icons">place</i>&nbsp;&nbsp;I randomly selected approximately 500 cities from around the globe, making sure that all latitudes and longitudes were represented. </p>
+                                            <p class="mb-1"><i class="material-icons">place</i>&nbsp;&nbsp;I randomly selected approximately 500 cities from around the globe.</p>
                                             <br>
                                             <p class="mb-1"><i class="material-icons">wb_sunny</i>&nbsp;&nbsp;Then I recorded the temperature of each city and created a scatterplot.</p>
                                             <br>
                                             <p class="mb-1"><i class="material-icons">check</i>&nbsp;&nbsp;The scatterplot proves the point.</p>
                                             <br>
-                                            <p class="mb-1"><i class="material-icons">developer_board</i>&nbsp;&nbsp;To build this analysis, I queried the OpenWeather API, and used Pandas and Matplotlib to visualize it.</p>
+                                            <p class="mb-1"><i class="material-icons">developer_board</i>&nbsp;&nbsp;To build this analysis, I queried OpenWeather API and used Pandas and Matplotlib to visualize it.</p>
                         
                                         
 
@@ -137,7 +142,7 @@
                                                                 <br> 
                                                             <td>
                                                                
-                                                            <img style="height: 290px; width: 100%; display: block;" src="LatitudeVsTemperaturePlotBig.png" alt="LatitudeVsTemperaturePlot">
+                                                            <img style="height: 280px; width: 100%; display: block;" src="Plots/LatitudeVsTemperaturePlotAnnotate.png" alt="LatitudeVsTemperaturePlot">
                                                             </td>
                                                             
                                                         </tr>
@@ -148,56 +153,46 @@
                                     
                                   </tr>
                                   <!-- Second row light gray text-->
-                                   <tr class="table-light"> 
-                                    <th scope="row"></th>
-                                    <td>
-                                            <p class="card-text"><h6><i class="material-icons">wb_incandescent </i>Interesting fact: looks like cities in the southern hemesphire tend to be slighly warmer than those on the northen one.</h6></p>
+                        </table>                 
 
-                                            <p class="mb-1">The relatioship with temperature is one we all know about. But how about humidity, wind or cloudiness? Is there also a relationship with latitute? Let's take a look!</p>
-                                    </td>
-                                    <!-- table inside column-- BUTTONS -->
-                                    <td>    
-                                                                            
-                                            <table  >
-                                                 
-                                            <!-- class="table table-hover"                                            > -->
-                                                    <thead>
-                                        
-                                                               
-                                                                
-                                                            <td>
-                                                                <BR>
-                                                                    
-                                                                    <!-- <small class="text-muted"></small> -->
 
-                                                                    <button type="button" class="btn btn-primary">Humidity</button>
-                                                                    <button type="button" class="btn btn-secondary">Wind</button>
-                                                                    <button type="button" class="btn btn-success">Cloudiness</button>
-                                                                    <button type="button" class="btn btn-danger">Temperature</button>
-                                                            <br>
-                                                            <br>
-                                                    
-                                                            </td>
-                                                    </thead>
-                                            </table>
-                                                       
-                        
-                    </tr>
-                </tbody>
-        </table>
-</td>
-                                   
-                                   
-                                  </tr>
-                                </tbody>
-                              </table> 
-
- <!--close table  -->
                
             </div>
+            </div>
                   
+            <div class="row">
+          
 
+                <div class="col-md-12">
+                    <div class="card mb-3">
+                    
+                    <div class="card-body">
+                        
+                        
+                          <h5 class="card-title">The relationship with temperature is one we all know about.</h5>
+                          <h5 class="card-title">But how about humidity, wind or cloudiness? Is there also a relationship with latitute?</h5>
+                          <h5 class="card-title">et take a look!</h5>
+                         
+</div>
+</div>
+        
 
+            <div class="row">
+                <div class="col-md-12">
+                                  
+      
+                                        <a  href="HTML/Humidity.html"><button type="button" class="btn btn-primary">Humidity</button></a>
+                                        <a  href="HTML/Wind.html"><button type="button" class="btn btn-secondary">Wind</button></a>
+                                          <a  href="HTML/Cloudiness.html"><button type="button" class="btn btn-success">Cloudiness</button></a>
+                                          <a  href="HTML/Temperature.html"><button type="button" class="btn btn-danger">Temperature</button></a>
+     
+    
+    
+    
+    
+      
+          </div>
+          </div>
 
 <!-- closing -->
     </div>
