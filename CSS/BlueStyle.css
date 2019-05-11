@@ -67,7 +67,7 @@ body {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: white;
   text-align: left;
   background-color: #fff;
 }
@@ -83,19 +83,27 @@ hr {
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
+ h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+
+}
+
+ h3, h4 {
+ 
+  color: black;
 }
 
 h7 {
   color: red;
   
 }
+h8 {color: black}
 
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  color: black;
 }
 
 abbr[title],
@@ -167,7 +175,7 @@ sup {
 }
 
 a {
-  color: #18BC9C;
+  color: white;
   text-decoration: none;
   background-color: transparent;
 }
@@ -8472,6 +8480,7 @@ button.bg-dark:focus {
 .mb-1,
 .my-1 {
   margin-bottom: 0.25rem !important;
+  
 }
 
 .ml-1,
@@ -8521,6 +8530,7 @@ button.bg-dark:focus {
 .my-3 {
   margin-bottom: 1rem !important;
   text-align: center;
+  
 }
 
 .ml-3,
