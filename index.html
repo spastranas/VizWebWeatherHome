@@ -9,7 +9,8 @@
             <!-- Bring in our bootstrap stylesheet -->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-          
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
             <link rel="stylesheet" href="CSS/BlueStyle.css">
 
 <!-- High charts -->
@@ -20,7 +21,11 @@
 
 		<style type="text/css">
 
-		</style>
+    </style>
+    
+
+
+
     </head>
     <body>
 <!-- begining of navegation bar using bootstrap -->
@@ -32,6 +37,21 @@
                     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
               <!-- left most of the navegation bar -->
                             <a class="navbar-brand" href="index.html"><h2><strong>Weather Analysis</strong></h2></a> 
+
+                            
+
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+
+<!--  -->
+
+
+
+
+
+
 
     
                               <!-- This makes the folowing items underneath to be grouped to the right  -->
@@ -58,8 +78,10 @@
                                 </li>
                                  <!-- Navigation item #4 -->
                                  <li class="dropdown">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">Plots</a>
+                                    
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Plots</a>
                                     <div class="dropdown-content" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                      
                                       <a class="dropdown-item" href="HTML/Temperature.html">Temperature</a>
                                       <a class="dropdown-item" href="HTML/Wind.html">Wind</a>
                                       <a class="dropdown-item" href="HTML/Humidity.html">Humidity</a>
@@ -69,6 +91,11 @@
                                   <!-- Close unordered list-->
                                 </ul>
                               </div>
+
+                        
+
+
+
                           </nav>
                    
             <!-- close bootstrap row and the column -->
@@ -790,6 +817,8 @@ Highcharts.chart('container', {
 <!-- last row -->
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
 
 
 	</body>
